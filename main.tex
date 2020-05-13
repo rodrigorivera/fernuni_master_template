@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\input{preamble/preamble_lecture}
+
+% Take the four files below from papers/preamble.
+\input{preamble/preamble}
+\input{preamble/preamble_acronyms}
+\input{preamble/preamble_math}
+\input{preamble/preamble_tikz}
+
+\newcommand{\xnewcommand}[2]{\newcommand{#1}{#2\xspace}}
+\xnewcommand{\coursenum}{COURSE NUMBER}
+\xnewcommand{\coursetitle}{COURSE TITLE}
+\xnewcommand{\instructor}{Rodrigo Rivera}
+\xnewcommand{\term}{TERM YEAR}
+
+\title{%
+\textbf{\coursenum \coursetitle}
+}
+
+\author{
+Rodrigo Rivera \\
+Skoltech
+}
+
+\begin{document}
+
+\maketitle
+\bigskip
+
+\begin{abstract}
+This document is a compilation of lecture notes for \instructor's
+\coursenum course in \coursetitle, during the term of \term. Please
+send feedback and/or corrections to \texttt{rodrigo.rivera@yahoo.de}.
+More broadly, I can be reached at \url{rodrigo-rivera.com}.
+\end{abstract}
+
+% \emph{Keywords:}
+
+\clearpage
+\glsresetall{}
+\tableofcontents
+\clearpage
+
+%Kurseinheit 01
+\input{sections/01/lecture_01}
+\input{sections/01/lecture_0101}
+
+%Kurseinheit 02
+\input{sections/02/lecture_02}
+
+%Kurseinheit 03
+\input{sections/03/lecture_03}
+
+%Kurseinheit 04
+\input{sections/04/lecture_04}
+
+%Kurseinheit 05
+\input{sections/05/lecture_05}
+
+%Kurseinheit 06
+\input{sections/06/lecture_06}
+
+%Kurseinheit 07
+\input{sections/07/lecture_07}
+
+\clearpage
+
+\bibliographystyle{apalike}
+\bibliography{bib}
+
+\clearpage
+\appendix
+
+%\input{sec_appendix}
+
+\end{document}
